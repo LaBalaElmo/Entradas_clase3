@@ -1,9 +1,10 @@
 use cuarentena;
 INSERT INTO Persona 
-VALUES (8301163, 'Paul', 'Landaeta Flores', '1991-03-25');
-
-INSERT INTO Persona 
-VALUES (8301663, 'Laura', 'Lance', '1990-03-30');
+VALUES (8301163, 'Paul', 'Landaeta Flores', '1991-03-25'),
+(5142356, 'Clara', 'Mamani', '1900-06-10'),
+(8952145, 'Jose', 'Choque', '2015-09-30'),
+(7824569, 'Leo', 'Choquevolketa', '2000-01-31'),
+(2587469, 'Carmen', 'Gimenez', '1985-05-16');
 
        
 insert into Consultorio 
@@ -14,11 +15,11 @@ insert into Consultorio
  (6, 1,306);
 
 insert into Paciente
-values (0,8301163,'2020-03-17');
-
-insert into Consultorio 
- values   (0, 1,303),
-		  (4, 1,304);
+values (0,8301163,'2020-03-17'),
+(0,5142356,'2020-03-15'),
+(0,8952145,'2020-03-10'),
+(0,7824569,'2020-03-01'),
+(0,2587469,'2020-03-04');
           
 INSERT INTO Especialidad
 
@@ -33,10 +34,11 @@ VALUES 	(1,'oftalmologia'),
 		(89,'Neurosquiatria');
        
 INSERT INTO Doctor
-values (1821,8301663,5,1),
+values  (1821,8301663,5,1),
 		(2541,8301663,3,2),
-		(8744,8301663,2,3),
-		(5963,8301663,6,4);
+		(8744,8952145,2,3),
+		(5963,2587469,6,4),
+        (5214,5142356,5,88);
         
 
 
@@ -44,7 +46,8 @@ INSERT INTO Consulta
 VALUES  (1,1821,'2020-02-02'),
 		(2,2541,'2020-02-06'),
         (2,8744,'2020-02-15'),
-        (1,5963,'2020-02-21');
+        (1,5963,'2020-02-21'),
+        (5,8744,'2020-02-24');
 
 
 
